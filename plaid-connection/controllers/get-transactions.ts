@@ -11,7 +11,7 @@ export const getTransactions = async (context: Context, data: any) => {
     start_date: startDate,
     end_date: endDate,
     options: {
-      account_ids: [data.accountId],
+      account_ids: data.accountIds,
       count: 500,
     },
   };
